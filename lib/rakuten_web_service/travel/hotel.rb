@@ -3,7 +3,7 @@ require 'rakuten_web_service/resource'
 module RakutenWebService
   module Travel
     class Hotel < RakutenWebService::Travel::Resource
-      endpoint 'https://app.rakuten.co.jp/services/api/Travel/SimpleHotelSearch/20131024'
+      endpoint 'https://app.rakuten.co.jp/services/api/Travel/HotelDetailSearch/20170426'
 
       set_parser do |response|
         response['hotels'].map do |hotel_info|
